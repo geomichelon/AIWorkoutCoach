@@ -180,3 +180,5 @@ Mapeamento direto:
 Esta branch inclui um exemplo de agente de processo em `docs/agents/ProjectGuardianAgent.md`.
 
 O agente valida o SDD, as fronteiras de DDD e a estrategia de TDD antes da implementacao de uma nova feature. O exemplo aplicado esta em `docs/agents/ProjectGuardianAgent-WorkoutPerformanceCharts-Report.md`.
+
+As formas de executar esse agente estao documentadas em `docs/agents/AgentExecutionOptions.md`.
