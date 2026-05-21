@@ -182,3 +182,16 @@ Esta branch inclui um exemplo de agente de processo em `docs/agents/ProjectGuard
 O agente valida o SDD, as fronteiras de DDD e a estrategia de TDD antes da implementacao de uma nova feature. O exemplo aplicado esta em `docs/agents/ProjectGuardianAgent-WorkoutPerformanceCharts-Report.md`.
 
 As formas de executar esse agente estao documentadas em `docs/agents/AgentExecutionOptions.md`.
+
+## Graficos de Desempenho
+
+Esta branch tambem implementa a feature aprovada pelo agente em `docs/SDD-WorkoutPerformanceCharts.md`.
+
+A feature adiciona:
+
+- `WorkoutPerformanceAnalyzer` no dominio;
+- `WorkoutPerformanceChartsViewModel` na Presentation;
+- `WorkoutPerformanceChartsView` no app demo;
+- testes de dominio e Presentation para os dados dos graficos.
+
+No app demo, gere um plano e toque em `Ver desempenho`.

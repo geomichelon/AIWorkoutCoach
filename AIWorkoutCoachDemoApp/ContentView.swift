@@ -37,6 +37,11 @@ struct ContentView: View {
                     Section("Plano") {
                         Text("Objetivo: \(plan.goal.rawValue)")
                         Text("Nivel: \(plan.fitnessLevel.rawValue)")
+                        NavigationLink {
+                            WorkoutPerformanceChartsView(plan: plan)
+                        } label: {
+                            Label("Ver desempenho", systemImage: "chart.bar")
+                        }
                     }
 
                     Section("Treinos") {

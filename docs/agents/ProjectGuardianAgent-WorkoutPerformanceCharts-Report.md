@@ -92,3 +92,23 @@ Implementar os testes primeiro, depois criar `WorkoutPerformanceAnalyzer`, `Work
 ```bash
 swift test
 ```
+
+## Execucao
+
+Status: `implemented`
+
+O plano aprovado foi executado com TDD:
+
+1. Testes de dominio foram criados.
+2. `WorkoutPerformanceAnalyzer` foi implementado no dominio.
+3. Testes de Presentation foram criados.
+4. `WorkoutPerformanceChartsViewModel` foi implementado.
+5. `WorkoutPerformanceChartsView` foi adicionada ao app demo.
+6. `ContentView` passou a navegar para a tela de desempenho.
+
+Validacao:
+
+```text
+swift test
+24 testes, 0 falhas
+```

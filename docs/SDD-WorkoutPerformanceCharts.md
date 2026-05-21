@@ -114,3 +114,28 @@ Antes de implementar, o `ProjectGuardianAgent` deve validar:
 - Testes de Presentation cobrem os dados expostos para graficos.
 - `swift test` passa.
 - O app demo compila.
+
+## Implementacao Executada
+
+Arquivos criados:
+
+```text
+Sources/AIWorkoutCoach/Domain/Services/WorkoutPerformanceAnalyzer.swift
+Sources/AIWorkoutCoach/Presentation/ViewModels/WorkoutPerformanceChartsViewModel.swift
+AIWorkoutCoachDemoApp/WorkoutPerformanceChartsView.swift
+Tests/AIWorkoutCoachTests/DomainTests/WorkoutPerformanceAnalyzerTests.swift
+Tests/AIWorkoutCoachTests/PresentationTests/WorkoutPerformanceChartsViewModelTests.swift
+```
+
+Arquivo alterado:
+
+```text
+AIWorkoutCoachDemoApp/ContentView.swift
+```
+
+Resultado esperado no app demo:
+
+1. Usuario gera um plano.
+2. Tela principal exibe `Ver desempenho`.
+3. Usuario abre a tela de desempenho.
+4. Tela mostra duracao total, duracao por treino e duracao por grupo muscular.
