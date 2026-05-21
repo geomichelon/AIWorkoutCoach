@@ -97,8 +97,6 @@ Presentation nao contem regra de negocio. Ela captura a intencao do usuario e de
 
 O target `AIWorkoutCoachDemoApp` e um app SwiftUI minimo. A tela principal permite tocar em `Gerar treino`, chama o ViewModel e exibe o plano retornado pelo mock de IA.
 
-Features incrementais podem ter SDDs proprios. A tela de detalhes de treino esta documentada em `docs/SDD-WorkoutDetails.md`, sem substituir este SDD principal.
-
 ## Entidades do Dominio
 
 - `User`: representa o usuario e suas restricoes de saude.

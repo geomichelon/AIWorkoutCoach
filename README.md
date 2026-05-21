@@ -55,8 +55,6 @@ AIWorkoutCoach
 │   ├── Infrastructure
 │   └── Presentation
 ├── AIWorkoutCoachDemoApp
-├── docs
-│   └── SDD-WorkoutDetails.md
 ├── Tests/AIWorkoutCoachTests
 ├── SDD.md
 ├── README.md
@@ -124,8 +122,6 @@ O arquivo `SDD.md` documenta:
 - riscos e mitigacoes;
 - limitacoes do exemplo.
 
-Para a feature de detalhes de treino, existe um SDD incremental em `docs/SDD-WorkoutDetails.md`. Ele documenta apenas a tela de detalhes, suas regras de UI, testes e fronteiras arquiteturais.
-
 ## Como o TDD Aparece
 
 Os testes em `Tests/AIWorkoutCoachTests` cobrem:
@@ -173,4 +169,3 @@ Mapeamento direto:
 6. Rode `swift test`.
 7. Abra `AIWorkoutCoachDemoApp` no simulador.
 8. Toque em `Gerar treino` e mostre que a UI usa mock de IA.
-9. Toque em um treino para abrir a tela de detalhes.
