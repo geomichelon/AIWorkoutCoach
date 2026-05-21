@@ -1,0 +1,16 @@
+.DS_Store
+.build/
+.swiftpm/xcode/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode build products
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SwiftPM generated files
+Package.resolved

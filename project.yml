@@ -1,0 +1,65 @@
+name: AIWorkoutCoach
+options:
+  minimumXcodeGenVersion: 2.0.0
+  deploymentTarget:
+    iOS: "16.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+targets:
+  AIWorkoutCoach:
+    type: framework
+    platform: iOS
+    sources:
+      - Sources/AIWorkoutCoach
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIWorkoutCoach
+        GENERATE_INFOPLIST_FILE: YES
+
+  AIWorkoutCoachDemoApp:
+    type: application
+    platform: iOS
+    sources:
+      - AIWorkoutCoachDemoApp
+    dependencies:
+      - target: AIWorkoutCoach
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIWorkoutCoachDemoApp
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+
+  AIWorkoutCoachTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests/AIWorkoutCoachTests
+    dependencies:
+      - target: AIWorkoutCoach
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.AIWorkoutCoachTests
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  AIWorkoutCoach:
+    build:
+      targets:
+        AIWorkoutCoach: all
+        AIWorkoutCoachTests: [test]
+    test:
+      targets:
+        - name: AIWorkoutCoachTests
+
+  AIWorkoutCoachDemoApp:
+    build:
+      targets:
+        AIWorkoutCoachDemoApp: all
+    run:
+      config: Debug
+    test:
+      targets:
+        - name: AIWorkoutCoachTests

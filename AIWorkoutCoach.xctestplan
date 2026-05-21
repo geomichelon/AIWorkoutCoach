@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "08404675-E067-4612-8477-64EC1EBECBB6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "performanceAntipatternCheckerEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:AIWorkoutCoach.xcodeproj",
+        "identifier" : "E562692E38796CE83187FEBB",
+        "name" : "AIWorkoutCoachTests"
+      }
+    }
+  ],
+  "version" : 1
+}
