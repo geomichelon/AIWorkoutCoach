@@ -169,3 +169,9 @@ Mapeamento direto:
 6. Rode `swift test`.
 7. Abra `AIWorkoutCoachDemoApp` no simulador.
 8. Toque em `Gerar treino` e mostre que a UI usa mock de IA.
+
+## Agentes no Processo
+
+Esta branch inclui um exemplo de agente de processo em `docs/agents/ProjectGuardianAgent.md`.
+
+O agente valida o SDD, as fronteiras de DDD e a estrategia de TDD antes da implementacao de uma nova feature. O exemplo aplicado esta em `docs/agents/ProjectGuardianAgent-WorkoutPerformanceCharts-Report.md`.
