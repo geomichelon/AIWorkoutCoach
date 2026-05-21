@@ -39,13 +39,15 @@ struct ContentView: View {
                         Text("Nivel: \(plan.fitnessLevel.rawValue)")
                     }
 
-                    ForEach(plan.workouts, id: \.title) { workout in
-                        Section(workout.title) {
-                            ForEach(workout.exercises, id: \.name) { exercise in
+                    Section("Treinos") {
+                        ForEach(plan.workouts, id: \.title) { workout in
+                            NavigationLink {
+                                WorkoutDetailsView(workout: workout)
+                            } label: {
                                 VStack(alignment: .leading, spacing: 4) {
-                                    Text(exercise.name)
+                                    Text(workout.title)
                                         .font(.headline)
-                                    Text("\(exercise.muscleGroup) - \(exercise.durationInMinutes) min")
+                                    Text("\(workout.exercises.count) exercicios")
                                         .font(.subheadline)
                                         .foregroundStyle(.secondary)
                                 }
